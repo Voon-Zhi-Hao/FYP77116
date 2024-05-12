@@ -1,0 +1,224 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.supervisor-container {
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.supervisor-list {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 2rem;
+    display: grid; /* Make the list container a grid */
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); /* Define grid columns */
+    gap: 1rem; /* Add spacing between supervisor cards */
+    grid-auto-rows: minmax(min-content, 1fr);
+  }
+  
+
+.supervisor-item {
+    display: grid;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.supervisor-card {
+    display: grid;
+    align-items: center;
+    padding: 1rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.supervisor-image {
+    display: flex; /* Arrange elements horizontally */
+    margin-bottom: 20px;
+}
+
+.supervisor-image img {
+    width: 80px; /* Adjust image width */
+    border-radius: 50%;
+}
+
+.student-image {
+    display:ruby; /* Arrange elements horizontally */
+    text-wrap:nowrap;
+}
+
+.student-image img {
+    width: 80px; /* Adjust image width */
+    border-radius: 50%;
+    margin-right:10px;
+}
+
+
+
+.supervisor-details {
+    flex: 1;
+    margin-left: 1rem;
+}
+
+.supervisor-name {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    margin-left: 10%;
+    margin-right: 15%;
+    flex: 1;
+}
+
+.supervisor-description {
+    margin-top: 0.5rem;
+    font-style: italic;
+}
+
+.supervisor-quota {
+    display: flex; /* Arrange elements horizontally */
+    margin-bottom: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.supervisor-description-container {
+    margin-top: 1rem; /* Add some space above the description */
+    border-top: 1px solid #ddd; /* Add a subtle top border */
+    padding: 1rem;
+    font-style: italic; /* Maintain italic style for the description */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.quota-container {
+    background-color: #FFF0F7; /* Light gray background */
+    display: flex;
+    align-items: center; 
+    flex-direction: column;
+    font-size: small;
+    padding: 1.5rem 1.5rem;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+
+.contact-container {
+    background-color: #FFF0F7;
+    padding: 1rem 1rem;
+    margin: auto;
+    display: flex;
+    align-items: center; 
+    flex-direction:row; /* Stack elements vertically */
+    gap: 0.5rem; /* Add some spacing between elements */
+}
+
+.contact {
+    font-weight: bold; /* Make phone number slightly bolder */
+    display: flex;
+    align-items: first baseline;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #6D31ED;
+    color: #fff;
+    margin-left: auto;
+}
+
+
+h4 {
+    font-size: 18px;
+    font-style: bold;
+}
+
+.table-auto {
+    text-align: center;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .btn.btn-green {
+    background-color: #28a745; /* Green color */
+    border-color: #28a745; /* Green border */
+    color: #fff; /* White text */
+  }
+  
+  .btn.btn-green:hover {
+    background-color: #207735; /* Darker green on hover */
+    border-color: #207735; /* Darker green border on hover */
+  }
+  
+  .btn.btn-red {
+    background-color: #dc3545; /* Red color */
+    border-color: #dc3545; /* Red border */
+    color: #fff; /* White text */
+  }
+  
+  .btn.btn-red:hover {
+    background-color: #bd2130; /* Darker red on hover */
+    border-color: #bd2130; /* Darker red border on hover */
+  }
+
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #FFFFFF;
+    display:flex;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+
+  .tab button:hover {
+    background-color: #ddd;
+  }
+
+  .tab button.active {
+    background-color: #ccc;
+  }
+
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
